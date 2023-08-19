@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+<style>
+  .all{
+    display: flex;
+    height: 360px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    margin: 80px auto;border-radius: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-shadow: 5px 6px 20px 0px #def0ff;
+  }
+  .res{
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 220px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.884);
+    
+
+  }
+ h4{
+  margin: 15px;
+ }
+  
+  .cir{
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  h1{
+    font-size: 44px;
+    margin-bottom: 0;
+  }
+  p{
+    margin-top: 0;
+    font-size: 14px;
+  
+  }
+
+ 
+  .sum{
+    width: 250px;
+    color: white;
+  }
+  #sum{
+    color: black;
+    text-align: center;
+  }
+
+  #r , #m , #v , #vi{
+    display: block;
+    width: 180px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    word-spacing: 50px;
+  }
+  #r{
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 93%);
+  }
+  #m{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(38, 100%, 90%);
+  }
+  #v{
+    color:hsl(166, 100%, 37%) ;
+    background-color:hsl(167, 100%, 92%) ;
+  }
+  #vi{
+    color: hsl(234, 85%, 45%);
+    background-color:hsl(232, 100%, 96%) ;
+  }
+  button{
+    display: block;
+    margin: 10px auto;
+    width: 160px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    border-color: transparent;
+    font-style: bold;
+  }
+  button:hover{
+    color: black;
+    background-color: hsl(252, 100%, 67%);
+    transition-duration: 0.3s;
+  }
+  @media (max-width: 375px) {
+    .all{
+      width: 250px;
+      height: fit-content;
+      flex-direction: column;
+    }
+    
+  }
+</style>
+
+</head>
+
+<body>
+<div class="all">
+  <div class="res">
+    <h4>Your result</h4>
+    <div class="cir">
+      <h1>76</h1>
+      <p>of 100</p>
+    </div>
+    <h2>Great</h2>
+    <p>you scored higher than 65% of <br> the people who have taken <br> these tests.</p>
+  </div>
+  <div class="sum">
+  <h4 id="sum">Summary</h4>
+  <div id="r">Reaction 80/100</div>
+  <div id="m">Memory 92/100</div>
+  <div id="v">Verbal 61/100</div>
+  <div id="vi">Visual 72/100</div>
+  <button>Continue</button>
+</div>
+</div>
+</body>
+
+</html>
